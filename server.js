@@ -23,6 +23,6 @@ app.use("/Listings", require('./Routes/ListingRoutes.js'))
 app.use("/Agents", require('./Routes/AgentRoutes.js'))
 
 app.listen(4000, () => {
-    console.log("Server running at port 4040");
+    console.log("Server running at port 4000");
 })
 

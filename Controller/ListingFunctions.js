@@ -3,9 +3,9 @@ const ListingModel = require('../Models/Listing')
 
 function AddDetails(req, res) {
     // console.log("caaled")
-    const { Description, Name, Status, Type, Price, RentalPeriod, Space,
+    const { Description, Name, Status, Type, Price, RentalPeriod, Size,
         Thumbnail, Images, Address, City, Pincode, Latitude, Longitutde, Beds, Bath, Condition, Year_Build, View, uid } = req.body;
-        console.log(req.body);
+        // console.log(req.body);
     // if (!Name || !Status || !Type || !RentalPrice || !RentalPeriod || !Size || !Thumbnail || !Images || !Address || !City || !Pincode || !Latitude || !Long || !Beds || !Bath || !Condition || !Year_Build || !View || !uid) {
     //     return res.status(400).json({ message: "Fill all fields" })
     // }
@@ -17,7 +17,7 @@ function AddDetails(req, res) {
         Type,
         Price,
         RentalPeriod,
-        Space,
+        Size,
         Thumbnail,
         Images,
         Address,
