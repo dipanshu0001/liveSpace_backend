@@ -1,4 +1,4 @@
-const AgentImageModel = require("../Models/AgentImageModel");
+const AgentImageModel = require("../Models/Agent_images.js");
 
 
 
