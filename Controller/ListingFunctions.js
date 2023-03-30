@@ -6,9 +6,9 @@ function AddDetails(req, res) {
     const { Description, Name, Status, Type, Price, RentalPeriod, Space,
         Thumbnail, Images, Address, City, Pincode, Latitude, Longitutde, Beds, Bath, Condition, Year_Build, View, uid } = req.body;
         console.log(req.body);
-    if (!Name || !Status || !Type || !RentalPrice || !RentalPeriod || !Size || !Thumbnail || !Images || !Address || !City || !Pincode || !Latitude || !Long || !Beds || !Bath || !Condition || !Year_Build || !View || !uid) {
-        return res.status(400).json({ message: "Fill all fields" })
-    }
+    // if (!Name || !Status || !Type || !RentalPrice || !RentalPeriod || !Size || !Thumbnail || !Images || !Address || !City || !Pincode || !Latitude || !Long || !Beds || !Bath || !Condition || !Year_Build || !View || !uid) {
+    //     return res.status(400).json({ message: "Fill all fields" })
+    // }
     // else {
     const new_Listing = new ListingModel({
         Description,
