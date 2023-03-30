@@ -1,4 +1,4 @@
-const AgentImageModel = require("../models/AgentImageModel");
+const AgentImageModel = require("../Models/AgentImageModel");
 
 
 
@@ -22,5 +22,5 @@ const AddImage = (req, res) => {
         })
 }
 module.exports ={
-    AddImage
+    AddImage    
 }
