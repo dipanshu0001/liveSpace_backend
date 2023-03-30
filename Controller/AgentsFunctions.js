@@ -5,7 +5,7 @@ const AgentImageModel = require("../models/AgentImageModel");
 const AddImage = (req, res) => {
     const { uid, imageurl } = req.body;
     if (!uid || !imageurl) {
-        return res.json({ "fill all Fields"})
+        return res.json({ message:"fill all Fields" ,iserror:3})
     }
     const new_img = new AgentImageModel({
         uid,
