@@ -95,6 +95,14 @@ const ListingSchema=new mongoose.Schema({
     },
     Agent_uid:{
         type:String,
+    },
+    Pending:{
+        type:Boolean,
+        default:true
+    },
+    Sale:{
+        type:Boolean,
+        default:false
     }
 })
 
