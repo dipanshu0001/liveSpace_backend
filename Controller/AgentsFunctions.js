@@ -50,8 +50,8 @@ const SendEmail = (req, res) => {
         
         ${message}
         
-        Their phone number is: ${mobile}
-        
+      
+          Their phone number is: ${mobile}
         Please let me know if you need any additional information to properly respond to this message.
         `
     };

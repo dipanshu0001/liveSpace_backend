@@ -9,7 +9,7 @@ const AgentImageModel = require('./Models/AgentDetails')
 const app = express();
 dotenv.config();
 const port = process.env.PORT || 4040;
-console.log(process.env.USERNAME)
+// console.log(process.env.USERNAME)
 const link = process.env.STRING_URL.replace("<PASSWORD>", process.env.PASSWORD)
 
 mongoose.connect(link, { useUnifiedTopology: true, useNewUrlParser: true })
@@ -30,7 +30,9 @@ mongoose.connect(link, { useUnifiedTopology: true, useNewUrlParser: true })
       
 app.use(bp.json());
 app.use(bp.urlencoded({ encoded: true, urlencoded: true }))
-app.use(cors());
+app.use(cors({
+  origin: 'https://live-space.vercel.app/'
+}));
 // app.use(updateAgentImagesMiddleware);
 // console.log(process.env.GMAIL)
 // console.log(process.env.GMAIL_PASSWORD)
