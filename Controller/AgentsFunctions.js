@@ -57,7 +57,6 @@ const SendEmail = (req, res) => {
     };
     transporter.sendMail(mailData, (err, info) => {
         if (err) {
-            // console.log(err)
             return res.status(500).json({ message: "internal server error please try again", iserror: 3 })
         }
         return res.json({ message: "Message successfully sent", iserror: 1 })

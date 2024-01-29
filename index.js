@@ -31,7 +31,8 @@ mongoose.connect(link, { useUnifiedTopology: true, useNewUrlParser: true })
 app.use(bp.json());
 app.use(bp.urlencoded({ encoded: true, urlencoded: true }))
 app.use(cors({
-  origin: 'https://live-space.vercel.app'
+  // origin: 'https://live-space.vercel.app'
+  origin: 'http://localhost:3000'
 }));
 // app.use(updateAgentImagesMiddleware);
 // console.log(process.env.GMAIL)
